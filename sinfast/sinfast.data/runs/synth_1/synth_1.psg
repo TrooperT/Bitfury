@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<Strategy Version="1" Minor="2">
+	<StratHandle Name="PlanAhead Defaults" Flow="XST14">
+		<Desc>PlanAhead Defaults (XST defaults with hierarchy)</Desc>
+	</StratHandle>
+	<Step Id="xst">
+		<Option Id="RAMStyleEnum">2</Option>
+		<Option Id="LCEnum">1</Option>
+		<Option Id="EquivRegRemovEnum">1</Option>
+		<Option Id="ShregExEnum">1</Option>
+		<Option Id="UseDSP48Enum">3</Option>
+		<Option Id="MoreOptsStr"><![CDATA[-use_clock_enable yes -use_sync_set yes -use_sync_reset yes -keep_hierarchy yes]]></Option>
+		<Option Id="ResShrEnum">1</Option>
+		<Option Id="OptLevelInt">2</Option>
+		<Option Id="RegDupEnum">1</Option>
+	</Step>
+</Strategy>
+

@@ -1,0 +1,106 @@
+#-----------------------------------------------------------
+# PlanAhead v14.2 (64-bit)
+# Build 194362 by xbuild on Fri Jul 20 18:49:25 MDT 2012
+# Start of session at: Sat Aug  4 07:35:13 2012
+# Process ID: 24267
+# Log file: /home/j/btcpar/sinfast/planAhead.log
+# Journal file: /home/j/btcpar/sinfast/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+open_project sinfast.ppr
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_runs impl_1
+wait_on_run impl_1
+reset_run impl_1 -noclean_dir
+open_run synth_1 -name netlist_1
+resize_pblock SP_s15rturn -add SLICE_X0Y129:SLICE_X3Y147 -remove SLICE_X0Y125:SLICE_X3Y147 -locs keep_all
+resize_pblock SP_s15lturn -from SLICE_X124Y105:SLICE_X127Y129 -to SLICE_X124Y103:SLICE_X127Y127 -locs keep_all
+resize_pblock SP_s15lturn -add SLICE_X124Y103:SLICE_X127Y128 -remove SLICE_X124Y103:SLICE_X127Y127 -locs keep_all
+save_design
+refresh_design
+refresh_design
+launch_runs impl_1
+wait_on_run impl_1
+reset_run impl_1 -noclean_dir
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_runs impl_1
+wait_on_run impl_1
+refresh_design
+close_design
+open_run impl_1
+set_property -name {steps.xst.args.More Options} -value {-use_clock_enable yes -use_sync_set yes -use_sync_reset yes} -objects [get_runs synth_1]
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_runs impl_1
+wait_on_run impl_1
+refresh_design
+open_rtl_design -name rtl_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+refresh_design
+launch_runs impl_1
+wait_on_run impl_1
+current_design impl_1
+refresh_design
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_runs impl_1
+wait_on_run impl_1
+reset_run impl_1 -noclean_dir
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_runs impl_1
+wait_on_run impl_1
+refresh_design
+reset_run impl_1
+launch_runs impl_1
+wait_on_run impl_1
+refresh_design
+resize_pblock SP_rndf27 -add SLICE_X68Y130:SLICE_X71Y147 -remove SLICE_X60Y130:SLICE_X71Y147 -locs keep_all
+undo
+open_run synth_1 -name netlist_1
+refresh_design
+set_property {steps.xst.args.More Options} {} [get_runs synth_1]
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+refresh_design
+set_property -name {steps.xst.args.More Options} -value {-use_clock_enable yes -use_sync_set yes -use_sync_reset yes -keep_hierarchy yes} -objects [get_runs synth_1]
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+refresh_design
+launch_runs impl_1
+wait_on_run impl_1
+reset_run impl_1
+launch_runs impl_1
+wait_on_run impl_1
+refresh_design
+current_design impl_1
+refresh_design
+reset_run impl_1
+launch_runs impl_1
+wait_on_run impl_1
+refresh_design
+set_property steps.map.args.cm speed [get_runs impl_1]
+set_property steps.map.args.r 4 [get_runs impl_1]
+set_property steps.map.args.register_duplication true [get_runs impl_1]
+reset_run impl_1
+launch_runs impl_1
+wait_on_run impl_1
+refresh_design
+close_project

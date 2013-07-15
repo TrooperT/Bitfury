@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# PlanAhead v13.2 (64-bit)
+# Build 131561 by hdbuild on Thu Jun 16 16:53:07 PDT 2011
+# Start of session at: Sat Jul 28 15:40:52 2012
+# Process ID: 15080
+# Log file: /home/j/btcpar/duoclock_cena/planAhead.log
+# Journal file: /home/j/btcpar/duoclock_cena/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+open_project duoclock.ppr
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_runs impl_1
+wait_on_run impl_1
+open_impl_design
+exit
+stop_gui

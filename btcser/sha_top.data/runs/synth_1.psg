@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<Strategy Version="1" Minor="2">
+	<StratHandle Name="PlanAhead Defaults" Flow="XST14">
+		<Desc>PlanAhead Defaults (XST defaults with hierarchy)</Desc>
+	</StratHandle>
+	<Step Id="xst">
+		<Option Id="RAMStyleEnum">2</Option>
+		<Option Id="EquivRegRemovEnum">1</Option>
+		<Option Id="OptLevelInt">2</Option>
+	</Step>
+</Strategy>
+

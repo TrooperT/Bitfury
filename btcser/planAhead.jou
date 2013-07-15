@@ -1,0 +1,11 @@
+#-----------------------------------------------------------
+# PlanAhead v14.2 (64-bit)
+# Build 194362 by xbuild on Fri Jul 20 18:49:25 MDT 2012
+# Start of session at: Sun Aug  5 16:52:35 2012
+# Process ID: 3778
+# Log file: /home/j/btcser/planAhead.log
+# Journal file: /home/j/btcser/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+open_project sha_top.ppr
+open_run impl_1

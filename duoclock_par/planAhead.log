@@ -1,0 +1,118 @@
+#-----------------------------------------------------------
+# PlanAhead v14.2 (64-bit)
+# Build 194362 by xbuild on Fri Jul 20 18:49:25 MDT 2012
+# Start of session at: Wed Aug  1 06:41:14 2012
+# Process ID: 10245
+# Log file: /home/j/btcpar/duoclock/planAhead.log
+# Journal file: /home/j/btcpar/duoclock/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from /opt/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [/opt/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [/opt/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+open_project duoclock.ppr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user repositories specified
+INFO: [IP_Flow 19-816] Loaded Xilinx IP repository '/opt/Xilinx/14.2/ISE_DS/ISE'
+INFO: [IP_Flow 19-1645] Clocking Wizard (xilinx.com:ip:clk_wiz:3.2) IP 'dcmsck' version 3.2 has a more recent version 3.6.  This IP may be upgraded to a more recent version using the Upgrade IP feature.  Until this IP is upgraded, the IP cannot be altered but existing outputs will be re-used.
+Parsing template File [/opt/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/verilog.xml].
+Finished parsing template File [/opt/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/verilog.xml].
+Parsing template File [/opt/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/vhdl.xml].
+Finished parsing template File [/opt/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/vhdl.xml].
+Parsing template File [/opt/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/ucf.xml].
+Finished parsing template File [/opt/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/ucf.xml].
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:05 . Memory (MB): peak = 2733.652 ; gain = 81.746
+update_compile_order -fileset sources_1
+open_run impl_1
+Parsing EDIF File [./duoclock.runs/impl_1/sha_top.edf]
+Finished Parsing EDIF File [./duoclock.runs/impl_1/sha_top.edf]
+INFO: [Netlist 29-17] Analyzing 40 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+Loading clock regions from /opt/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/spartan6lx/xc6slx150/ClockRegion.xml
+Loading clock buffers from /opt/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/spartan6lx/xc6slx150/ClockBuffers.xml
+Loading package pin functions from /opt/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from /opt/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/spartan6lx/xc6slx150/fgg484/Package.xml
+Loading io standards from /opt/Xilinx/14.2/ISE_DS/PlanAhead/data/./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from /opt/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : /opt/Xilinx/14.2/ISE_DS/PlanAhead/data/./parts/xilinx/spartan6/drc.xml
+WARNING: [Timing 38-83] Timing library cell SRLC32E does not define port A[4] which is referred to in the netlist. The library cell will be ignored and the cell will be treated as a black box for timing purposes.
+WARNING: [Timing 38-83] Timing library cell SRLC32E does not define port A[3] which is referred to in the netlist. The library cell will be ignored and the cell will be treated as a black box for timing purposes.
+WARNING: [Timing 38-83] Timing library cell SRLC32E does not define port A[2] which is referred to in the netlist. The library cell will be ignored and the cell will be treated as a black box for timing purposes.
+WARNING: [Timing 38-83] Timing library cell SRLC32E does not define port A[1] which is referred to in the netlist. The library cell will be ignored and the cell will be treated as a black box for timing purposes.
+WARNING: [Timing 38-83] Timing library cell SRLC32E does not define port A[0] which is referred to in the netlist. The library cell will be ignored and the cell will be treated as a black box for timing purposes.
+CRITICAL WARNING: [Constraints 18-5] Cannot loc instance 'SHAFCE/SS/SNK/RNDBT[43].ABCDG.ABCD/BG[28].GC4.C4' at site SLICE_X16Y25, Routing contention at pips element AOUTMUX [/home/j/btcpar/duoclock/duoclock.runs/impl_1/sha_top.edf:24121]
+CRITICAL WARNING: [Constraints 18-5] Cannot loc instance 'SHAFCE/SS/SNK/RNDBT[38].ABCDG.ABCD/BG[28].GC4.C4' at site SLICE_X36Y25, Routing contention at pips element AOUTMUX [/home/j/btcpar/duoclock/duoclock.runs/impl_1/sha_top.edf:24127]
+CRITICAL WARNING: [Constraints 18-5] Cannot loc instance 'SHAFCE/SS/SNK/RNDUP[14].AUX/BG[0].GC4.C4' at site SLICE_X114Y36, Routing contention at pips element AOUTMUX [/home/j/btcpar/duoclock/duoclock.runs/impl_1/sha_top.edf:24160]
+CRITICAL WARNING: [Constraints 18-5] Cannot loc instance 'SHAFCE/SS/SNK/RNDBT[29].ABCDG.ABCD/BG[16].GC4.C4' at site SLICE_X74Y22, Conflicting nets for physical connection driven by SLICE_X74Y25.A6LUT.O6: SHAFCE/SS/SNK/RNDBT[29].ABCDG.ABCD/csa2c[30] SHAFCE/SS/SNK/RNDBT[29].ABCDG.ABCD/addl6o[28] [/home/j/btcpar/duoclock/duoclock.runs/impl_1/sha_top.edf:24201]
+CRITICAL WARNING: [Constraints 18-5] Cannot loc instance 'SHAFCE/SS/SNK/RNDBT[34].ABCDG.ABCD/BG[16].GC4.C4' at site SLICE_X52Y22, Conflicting nets for physical connection driven by SLICE_X52Y25.A6LUT.O6: SHAFCE/SS/SNK/RNDBT[34].ABCDG.ABCD/csa2c[30] SHAFCE/SS/SNK/RNDBT[34].ABCDG.ABCD/addl6o[28] [/home/j/btcpar/duoclock/duoclock.runs/impl_1/sha_top.edf:24223]
+CRITICAL WARNING: [Constraints 18-5] Cannot loc instance 'SHAFCE/SS/SNK/RNDBT[21].ABCDG.ABCD/BG[4].GC4.C4' at site SLICE_X106Y19, Routing contention at pips element AOUTMUX [/home/j/btcpar/duoclock/duoclock.runs/impl_1/sha_top.edf:24490]
+CRITICAL WARNING: [Constraints 18-5] Cannot loc instance 'SHAFCE/SS/SNK/RNDUP[9].ABCD/BG[12].GC4.C4' at site SLICE_X94Y49, Routing contention at pips element AOUTMUX [/home/j/btcpar/duoclock/duoclock.runs/impl_1/sha_top.edf:24550]
+CRITICAL WARNING: [Constraints 18-5] Cannot loc instance 'SHAFCE/SS/SNK/RNDUP[5].EFGH/BG[20].GC4.C4' at site SLICE_X80Y51, Routing contention at pips element AOUTMUX [/home/j/btcpar/duoclock/duoclock.runs/impl_1/sha_top.edf:25620]
+CRITICAL WARNING: [Constraints 18-5] Cannot loc instance 'SHAFCE/SS/SNK/GWRT[1].WRT/BG[0].GC4.C4' at site SLICE_X70Y36, Element SLICE_X70Y42.AFFMUX is not routable [/home/j/btcpar/duoclock/duoclock.runs/impl_1/sha_top.edf:25840]
+CRITICAL WARNING: [Constraints 18-5] Cannot loc instance 'SHAFCE/SS/SNK/RNDUP[13].ABCD/BG[24].GC4.C4' at site SLICE_X110Y52, Routing contention at pips element AOUTMUX [/home/j/btcpar/duoclock/duoclock.runs/impl_1/sha_top.edf:26001]
+CRITICAL WARNING: [Constraints 18-5] Cannot loc instance 'SHAFCE/SS/SNK/GWRB[17].WRB/BG[20].GC4.C4' at site SLICE_X50Y33, Routing contention at pips element AOUTMUX [/home/j/btcpar/duoclock/duoclock.runs/impl_1/sha_top.edf:26373]
+CRITICAL WARNING: [Constraints 18-5] Cannot loc instance 'SHAFCE/SS/SNK/RNDUP[12].EFGH/BG[20].GC4.C4' at site SLICE_X108Y51, Routing contention at pips element AOUTMUX [/home/j/btcpar/duoclock/duoclock.runs/impl_1/sha_top.edf:26446]
+CRITICAL WARNING: [Constraints 18-5] Cannot loc instance 'SHAFCE/SS/SNK/RNDBT[37].ABCDG.ABCD/BG[24].GC4.C4' at site SLICE_X40Y24, Conflicting nets for physical connection driven by SLICE_X40Y21.B6LUT.O6: SHAFCE/SS/SNK/RNDBT[37].ABCDG.ABCD/addl6o[12] SHAFCE/SS/SNK/RNDBT[37].ABCDG.ABCD/addl6o[13] [/home/j/btcpar/duoclock/duoclock.runs/impl_1/sha_top.edf:26690]
+CRITICAL WARNING: [Constraints 18-5] Cannot loc instance 'SHAFCE/SS/SNK/RNDBT[42].ABCDG.ABCD/BG[24].GC4.C4' at site SLICE_X20Y24, Conflicting nets for physical connection driven by SLICE_X20Y21.B6LUT.O6: SHAFCE/SS/SNK/RNDBT[42].ABCDG.ABCD/addl6o[12] SHAFCE/SS/SNK/RNDBT[42].ABCDG.ABCD/addl6o[13] [/home/j/btcpar/duoclock/duoclock.runs/impl_1/sha_top.edf:26696]
+CRITICAL WARNING: [Constraints 18-5] Cannot loc instance 'SHAFCE/SS/SNK/RNDBT[20].AUX/BG[12].GC4.C4' at site SLICE_X112Y31, Routing contention at pips element AOUTMUX [/home/j/btcpar/duoclock/duoclock.runs/impl_1/sha_top.edf:26726]
+CRITICAL WARNING: [Constraints 18-5] Cannot loc instance 'SHAFCE/SS/SNK/RNDBT[28].ABCDG.ABCD/BG[12].GC4.C4' at site SLICE_X78Y21, Routing contention at pips element AOUTMUX [/home/j/btcpar/duoclock/duoclock.runs/impl_1/sha_top.edf:26738]
+CRITICAL WARNING: [Constraints 18-5] Cannot loc instance 'SHAFCE/SS/SNK/RNDBT[33].ABCDG.ABCD/BG[12].GC4.C4' at site SLICE_X56Y21, Routing contention at pips element AOUTMUX [/home/j/btcpar/duoclock/duoclock.runs/impl_1/sha_top.edf:26744]
+CRITICAL WARNING: [Constraints 18-5] Cannot loc instance 'SHAFCE/SS/SNK/RNDBT[41].EFGH/BG[0].GC4.C4' at site SLICE_X26Y18, Routing contention at pips element AOUTMUX [/home/j/btcpar/duoclock/duoclock.runs/impl_1/sha_top.edf:27135]
+CRITICAL WARNING: [Constraints 18-5] Cannot loc instance 'SHAFCE/SS/SNK/RNDBT[36].EFGH/BG[0].GC4.C4' at site SLICE_X46Y18, Routing contention at pips element AOUTMUX [/home/j/btcpar/duoclock/duoclock.runs/impl_1/sha_top.edf:27141]
+CRITICAL WARNING: [Constraints 18-5] Cannot loc instance 'SHAFCE/SS/SNK/RNDBT[22].ABCDG.ABCD/BG[16].GC4.C4' at site SLICE_X102Y22, Routing contention at pips element AOUTMUX [/home/j/btcpar/duoclock/duoclock.runs/impl_1/sha_top.edf:27359]
+CRITICAL WARNING: [Constraints 18-5] Cannot loc instance 'SHAFCE/SS/SNK/RNDBT[17].ABCDG.ABCD/BG[16].GC4.C4' at site SLICE_X122Y22, Routing contention at pips element AOUTMUX [/home/j/btcpar/duoclock/duoclock.runs/impl_1/sha_top.edf:27365]
+CRITICAL WARNING: [Constraints 18-5] Cannot loc instance 'SHAFCE/SS/SNK/RNDUP[12].ABCD/BG[0].GC4.C4' at site SLICE_X106Y46, Conflicting nets for physical connection driven by SLICE_X106Y46.A6LUT.O6: SHAFCE/SS/SNK/RNDUP[12].ABCD/csa2c[2] SHAFCE/SS/SNK/RNDUP[12].ABCD/addl6o[0] [/home/j/btcpar/duoclock/duoclock.runs/impl_1/sha_top.edf:28962]
+CRITICAL WARNING: [Constraints 18-5] Cannot loc instance 'SHAFCE/SS/SNK/RNDUP[3].AUX/BG[12].GC4.C4' at site SLICE_X72Y39, Routing contention at pips element AOUTMUX [/home/j/btcpar/duoclock/duoclock.runs/impl_1/sha_top.edf:29040]
+CRITICAL WARNING: [Constraints 18-5] Cannot loc instance 'SHAFCE/SS/SNK/RNDBT[36].ABCDG.ABCD/BG[20].GC4.C4' at site SLICE_X44Y23, Routing contention at pips element AOUTMUX [/home/j/btcpar/duoclock/duoclock.runs/impl_1/sha_top.edf:29617]
+CRITICAL WARNING: [Constraints 18-5] Cannot loc instance 'SHAFCE/SS/SNK/RNDBT[41].ABCDG.ABCD/BG[20].GC4.C4' at site SLICE_X24Y23, Routing contention at pips element AOUTMUX [/home/j/btcpar/duoclock/duoclock.runs/impl_1/sha_top.edf:29623]
+CRITICAL WARNING: [Constraints 18-5] Cannot loc instance 'SHAFCE/SS/SNK/RNDUP[4].ABCD/BG[4].GC4.C4' at site SLICE_X74Y47, Routing contention at pips element AOUTMUX [/home/j/btcpar/duoclock/duoclock.runs/impl_1/sha_top.edf:29824]
+CRITICAL WARNING: [Constraints 18-5] Cannot loc instance 'SHAFCE/SS/SNK/RNDBT[32].EFGH/BG[12].GC4.C4' at site SLICE_X62Y21, Routing contention at pips element AOUTMUX [/home/j/btcpar/duoclock/duoclock.runs/impl_1/sha_top.edf:29954]
+CRITICAL WARNING: [Constraints 18-5] Cannot loc instance 'SHAFCE/SS/SNK/RNDBT[27].EFGH/BG[12].GC4.C4' at site SLICE_X84Y21, Routing contention at pips element AOUTMUX [/home/j/btcpar/duoclock/duoclock.runs/impl_1/sha_top.edf:29960]
+CRITICAL WARNING: [Constraints 18-5] Cannot loc instance 'SHAFCE/SS/SNK/RNDBT[37].ABCDG.ABCD/BG[0].GC4.C4' at site SLICE_X40Y18, Conflicting nets for physical connection driven by SLICE_X40Y19.B6LUT.O6: SHAFCE/SS/SNK/RNDBT[37].ABCDG.ABCD/addl6o[7] SHAFCE/SS/SNK/RNDBT[37].ABCDG.ABCD/addl6o[5] [/home/j/btcpar/duoclock/duoclock.runs/impl_1/sha_top.edf:30199]
+CRITICAL WARNING: [Constraints 18-5] Cannot loc instance 'SHAFCE/SS/SNK/RNDBT[42].ABCDG.ABCD/BG[0].GC4.C4' at site SLICE_X20Y18, Conflicting nets for physical connection driven by SLICE_X20Y19.B6LUT.O6: SHAFCE/SS/SNK/RNDBT[42].ABCDG.ABCD/addl6o[7] SHAFCE/SS/SNK/RNDBT[42].ABCDG.ABCD/addl6o[5] [/home/j/btcpar/duoclock/duoclock.runs/impl_1/sha_top.edf:30205]
+CRITICAL WARNING: [Constraints 18-5] Cannot loc instance 'SHAFCE/SS/SNK/RNDBT[21].ABCDG.ABCD/BG[12].GC4.C4' at site SLICE_X106Y21, Routing contention at pips element AOUTMUX [/home/j/btcpar/duoclock/duoclock.runs/impl_1/sha_top.edf:30217]
+CRITICAL WARNING: [Constraints 18-5] Cannot loc instance 'SHAFCE/SS/SNK/RNDBT[24].EFGH/BG[24].GC4.C4' at site SLICE_X96Y24, Conflicting nets for physical connection driven by SLICE_X96Y19.B6LUT.O6: SHAFCE/SS/SNK/RNDBT[24].EFGH/addl6o[6] SHAFCE/SS/SNK/RNDBT[24].EFGH/addl6o[5] [/home/j/btcpar/duoclock/duoclock.runs/impl_1/sha_top.edf:30634]
+CRITICAL WARNING: [Constraints 18-5] Cannot loc instance 'SHAFCE/SS/SNK/RNDBT[19].EFGH/BG[24].GC4.C4' at site SLICE_X116Y24, Conflicting nets for physical connection driven by SLICE_X116Y19.B6LUT.O6: SHAFCE/SS/SNK/RNDBT[19].EFGH/addl6o[6] SHAFCE/SS/SNK/RNDBT[19].EFGH/addl6o[5] [/home/j/btcpar/duoclock/duoclock.runs/impl_1/sha_top.edf:30640]
+CRITICAL WARNING: [Constraints 18-5] Cannot loc instance 'SHAFCE/SS/SNK/RNDUP[4].AUX/BG[24].GC4.C4' at site SLICE_X74Y42, Routing contention at pips element AOUTMUX [/home/j/btcpar/duoclock/duoclock.runs/impl_1/sha_top.edf:31118]
+CRITICAL WARNING: [Constraints 18-5] Cannot loc instance 'SHAFCE/SS/SNK/RNDUP[12].ABCD/BG[12].GC4.C4' at site SLICE_X106Y49, Conflicting nets for physical connection driven by SLICE_X106Y46.A6LUT.O6: SHAFCE/SS/SNK/RNDUP[12].ABCD/csa2c[2] SHAFCE/SS/SNK/RNDUP[12].ABCD/addl6o[0] [/home/j/btcpar/duoclock/duoclock.runs/impl_1/sha_top.edf:31628]
+CRITICAL WARNING: [Constraints 18-5] Cannot loc instance 'SHAFCE/SS/SNK/RNDBT[45].AUX/BG[20].GC4.C4' at site SLICE_X12Y33, Routing contention at pips element AOUTMUX [/home/j/btcpar/duoclock/duoclock.runs/impl_1/sha_top.edf:31837]
+CRITICAL WARNING: [Constraints 18-5] Cannot loc instance 'SHAFCE/SS/SNK/RNDBT[20].AUX/BG[28].L5' at site SLICE_X112Y35, Conflicting nets for physical connection driven by SLICE_X112Y35.A5LUT.O5: SHAFCE/SS/SNK/RNDBT[20].AUX/o5[28] SHAFCE/SS/SNK/RNDBT[20].AUX/sum[30] [/home/j/btcpar/duoclock/duoclock.runs/impl_1/sha_top.edf:32512]
+CRITICAL WARNING: [Constraints 18-5] Cannot loc instance 'SHAFCE/SS/SNK/GWRB[21].WRB/BG[8].GC4.C4' at site SLICE_X16Y30, Routing contention at pips element AOUTMUX [/home/j/btcpar/duoclock/duoclock.runs/impl_1/sha_top.edf:32793]
+CRITICAL WARNING: [Constraints 18-5] Cannot loc instance 'SHAFCE/SS/SNK/GWRB[16].WRB/BG[8].GC4.C4' at site SLICE_X58Y30, Routing contention at pips element AOUTMUX [/home/j/btcpar/duoclock/duoclock.runs/impl_1/sha_top.edf:32799]
+CRITICAL WARNING: [Constraints 18-5] Cannot loc instance 'SHAFCE/SS/SNK/RNDBT[45].ABCDG.ABCD/BG[9].ADDL5' at site SLICE_X8Y20, Routing contention at pips element DOUTMUX [/home/j/btcpar/duoclock/duoclock.runs/impl_1/sha_top.edf:32854]
+CRITICAL WARNING: [Constraints 18-5] Cannot loc instance 'SHAFCE/SS/SNK/RNDUP[13].AUX/BG[0].GC4.C4' at site SLICE_X112Y36, Routing contention at pips element AOUTMUX [/home/j/btcpar/duoclock/duoclock.runs/impl_1/sha_top.edf:34267]
+CRITICAL WARNING: [Constraints 18-5] Cannot loc instance 'SHAFCE/SS/SNK/RNDBT[20].AUX/BG[0].GC4.C4' at site SLICE_X112Y28, Routing contention at pips element AOUTMUX [/home/j/btcpar/duoclock/duoclock.runs/impl_1/sha_top.edf:34273]
+CRITICAL WARNING: [Constraints 18-5] Cannot loc instance 'SHAFCE/SS/SNK/RNDBT[32].EFGH/BG[0].GC4.C4' at site SLICE_X62Y18, Routing contention at pips element AOUTMUX [/home/j/btcpar/duoclock/duoclock.runs/impl_1/sha_top.edf:34748]
+CRITICAL WARNING: [Constraints 18-5] Cannot loc instance 'SHAFCE/SS/SNK/RNDBT[27].EFGH/BG[0].GC4.C4' at site SLICE_X84Y18, Routing contention at pips element AOUTMUX [/home/j/btcpar/duoclock/duoclock.runs/impl_1/sha_top.edf:34762]
+CRITICAL WARNING: [Constraints 18-5] Cannot loc instance 'SHAFCE/SS/SNK/RNDUP[10].ABCD/BG[4].GC4.C4' at site SLICE_X98Y47, Routing contention at pips element AOUTMUX [/home/j/btcpar/duoclock/duoclock.runs/impl_1/sha_top.edf:35110]
+CRITICAL WARNING: [Constraints 18-5] Cannot loc instance 'SHAFCE/SS/SNK/RNDBT[42].AUX/BG[12].GC4.C4' at site SLICE_X22Y31, Routing contention at pips element AOUTMUX [/home/j/btcpar/duoclock/duoclock.runs/impl_1/sha_top.edf:35647]
+CRITICAL WARNING: [Constraints 18-5] Cannot loc instance 'SHAFCE/SS/SNK/RNDBT[37].AUX/BG[12].GC4.C4' at site SLICE_X44Y31, Routing contention at pips element AOUTMUX [/home/j/btcpar/duoclock/duoclock.runs/impl_1/sha_top.edf:35653]
+CRITICAL WARNING: [Constraints 18-5] Cannot loc instance 'SHAFCE/SS/SNK/RNDUP[3].ABCD/BG[20].GC4.C4' at site SLICE_X70Y51, Routing contention at pips element AOUTMUX [/home/j/btcpar/duoclock/duoclock.runs/impl_1/sha_top.edf:35673]
+CRITICAL WARNING: [Constraints 18-5] Cannot loc instance 'SHAFCE/SS/SNK/RNDUP[2].ABCD/BG[8].GC4.C4' at site SLICE_X64Y48, Conflicting nets for physical connection driven by SLICE_X64Y46.B6LUT.O6: SHAFCE/SS/SNK/RNDUP[2].ABCD/addl6o[0] SHAFCE/SS/SNK/RNDUP[2].ABCD/addl6o[1] [/home/j/btcpar/duoclock/duoclock.runs/impl_1/sha_top.edf:35768]
+WARNING: [Common 17-14] Message 'Constraints 18-5' appears 50 times and further instances of the messages will be disabled. Use the Tcl command set_msg_limit to change the current settings.
+CRITICAL WARNING: [Constraints 18-5] Cannot loc instance 'SHAFCE/SS/SNK/GWRT[3].WRT/BG[28].GC4.C4' at site SLICE_X86Y43, Element SLICE_X86Y36.AFFMUX is not routable [/home/j/btcpar/duoclock/duoclock.runs/impl_1/sha_top.edf:35958]
+Parsing UCF File [/home/j/btcpar/duoclock/duoclock.runs/impl_1/.constrs/duoclock.ucf]
+Finished Parsing UCF File [/home/j/btcpar/duoclock/duoclock.runs/impl_1/.constrs/duoclock.ucf]
+INFO: [Designutils 20-669] Parsing Placement File : /home/j/btcpar/duoclock/duoclock.runs/impl_1/sha_top_routed.xdl
+INFO: [Designutils 20-658] Finished Parsing Placement File : /home/j/btcpar/duoclock/duoclock.runs/impl_1/sha_top_routed.xdl
+INFO: [Designutils 20-671] Placed 233854 instances
+INFO: [Timing 38-71] No path element with name SHAFCE/SP/MS3_in[128]_rt found. It will be ignored.
+INFO: [Timing 38-71] No path element with name SHAFCE/SP/MS3_in[40]_rt found. It will be ignored.
+INFO: [Timing 38-71] No path element with name SHAFCO/SP/MS3_in[224]_rt found. It will be ignored.
+INFO: [Timing 38-71] No path element with name SHAFCO/SP/MS3_in[194]_rt found. It will be ignored.
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 65 instances were transformed.
+  INV => LUT1: 24 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 8 instances
+  RAM32X1S => RAM32X1S (RAMS32): 32 instances
+  SRLC16E => SRL16E: 1 instances
+
+Phase 0 | Netlist Checksum: d807fd23
+open_run: Time (s): cpu = 00:04:19 ; elapsed = 00:04:03 . Memory (MB): peak = 3356.223 ; gain = 613.742
+exit
+INFO: [Common 17-206] Exiting PlanAhead...
+INFO: [Common 17-83] Releasing license: PlanAhead

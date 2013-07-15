@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document>
+<!--The data in this file is primarily intended for consumption by Xilinx tools.
+The structure and the elements are likely to change over the next few releases.
+This means code written to parse this file will need to be revisited each subsequent release.-->
+<application name="pa" timeStamp="Sun Jul 29 00:34:19 2012">
+<section name="Project Information" visible="false">
+<property name="ProjectID" value="a0f0057d90e449bfb6168f3dd14d685e" type="ProjectID"/>
+<property name="ProjectIteration" value="2" type="ProjectIteration"/>
+</section>
+<section name="PlanAhead Usage" visible="true">
+<item name="Project Data">
+<property name="SrcSetCount" value="1" type="SrcSetCount"/>
+<property name="ConstraintSetCount" value="1" type="ConstraintSetCount"/>
+<property name="DesignMode" value="RTL" type="DesignMode"/>
+<property name="SynthesisStrategy" value="PlanAhead Defaults" type="SynthesisStrategy"/>
+<property name="ImplStrategy" value="ISE Defaults" type="ImplStrategy"/>
+</item>
+<item name="Java Command Handlers">
+<property name="AboutPlanAhead" value="1" type="JavaHandler"/>
+<property name="AddSrc" value="3" type="JavaHandler"/>
+<property name="AutoFitSelection" value="2" type="JavaHandler"/>
+<property name="AutocreatePblocks" value="1" type="JavaHandler"/>
+<property name="CloseProject" value="2" type="JavaHandler"/>
+<property name="ConfigureBitgenRun" value="1" type="JavaHandler"/>
+<property name="ConfigureImplRun" value="13" type="JavaHandler"/>
+<property name="ConfigureSynthRun" value="15" type="JavaHandler"/>
+<property name="CreateProject" value="1" type="JavaHandler"/>
+<property name="CreateSrc" value="8" type="JavaHandler"/>
+<property name="CreateTimingConstr" value="6" type="JavaHandler"/>
+<property name="EditDelete" value="11" type="JavaHandler"/>
+<property name="FileExit" value="7" type="JavaHandler"/>
+<property name="FitSelection" value="21" type="JavaHandler"/>
+<property name="LaunchFPGAEditor" value="5" type="JavaHandler"/>
+<property name="LaunchXPA" value="2" type="JavaHandler"/>
+<property name="OpenDesign" value="6" type="JavaHandler"/>
+<property name="OpenProject" value="1" type="JavaHandler"/>
+<property name="PRPromoteConfig" value="2" type="JavaHandler"/>
+<property name="PartitionSettings" value="3" type="JavaHandler"/>
+<property name="ResourceEstimation" value="1" type="JavaHandler"/>
+<property name="RunElaborate" value="1" type="JavaHandler"/>
+<property name="RunImplementation" value="197" type="JavaHandler"/>
+<property name="RunSynthesis" value="164" type="JavaHandler"/>
+<property name="RunTRCE" value="8" type="JavaHandler"/>
+<property name="SaveDesign" value="3" type="JavaHandler"/>
+<property name="ShowConnectivity" value="85" type="JavaHandler"/>
+<property name="ShowView" value="51" type="JavaHandler"/>
+<property name="ToggleCreateBELConstrainMode" value="2" type="JavaHandler"/>
+<property name="ToggleCreatePblockMode" value="36" type="JavaHandler"/>
+<property name="ToggleSelectAreaMode" value="21" type="JavaHandler"/>
+<property name="ToggleShowConnectedNets" value="16" type="JavaHandler"/>
+<property name="ViewTaskImplementedDesign" value="25" type="JavaHandler"/>
+<property name="ViewTaskNetlistDesign" value="21" type="JavaHandler"/>
+<property name="ViewTaskProjectManager" value="12" type="JavaHandler"/>
+<property name="ZoomIn" value="3" type="JavaHandler"/>
+<property name="ZoomOut" value="10" type="JavaHandler"/>
+</item>
+<item name="Other">
+<property name="GuiMode" value="11" type="GuiMode"/>
+<property name="BatchMode" value="0" type="BatchMode"/>
+<property name="TclMode" value="0" type="TclMode"/>
+<property name="ISEMode" value="0" type="ISEMode"/>
+</item>
+</section>
+</application>
+</document>

@@ -1,0 +1,826 @@
+#-----------------------------------------------------------
+# PlanAhead v14.2 (64-bit)
+# Build 194362 by xbuild on Fri Jul 20 18:49:25 MDT 2012
+# Start of session at: Sat Aug  4 07:35:13 2012
+# Process ID: 24267
+# Log file: /home/j/btcpar/sinfast/planAhead.log
+# Journal file: /home/j/btcpar/sinfast/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from /opt/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [/opt/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [/opt/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+open_project sinfast.ppr
+Scanning sources...
+Finished scanning sources
+Parsing template File [/opt/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/verilog.xml].
+Finished parsing template File [/opt/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/verilog.xml].
+Parsing template File [/opt/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/vhdl.xml].
+Finished parsing template File [/opt/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/vhdl.xml].
+Parsing template File [/opt/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/ucf.xml].
+Finished parsing template File [/opt/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/ucf.xml].
+open_project: Time (s): cpu = 00:01:35 ; elapsed = 00:01:01 . Memory (MB): peak = 2715.441 ; gain = 50.957
+reset_run synth_1
+reset_run: Time (s): cpu = 00:01:25 ; elapsed = 00:00:59 . Memory (MB): peak = 2715.441 ; gain = 0.000
+launch_runs synth_1
+[Sat Aug  4 07:43:43 2012] Launched synth_1...
+Run output will be captured here: /home/j/btcpar/sinfast/sinfast.runs/synth_1/runme.log
+launch_runs impl_1
+Release 14.2 - ngc2edif P.28xd (lin64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Release 14.2 - ngc2edif P.28xd (lin64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design sha_top.ngc ...
+WARNING:NetListWriters:298 - No output is written to sha_top.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:304 - Port bus Addr_out<6 : 0> on block SHA_TaskLoader is
+   not reconstructed, because there are some missing bus pins.
+WARNING:NetListWriters:304 - Port bus Addr_out<6 : 0> on block SHA_MatchFIFO is
+   not reconstructed, because there are some missing bus pins.
+WARNING:NetListWriters:304 - Port bus Addr3_in<6 : 0> on block SHA_4RAM is not
+   reconstructed, because there are some missing bus pins.
+WARNING:NetListWriters:304 - Port bus Addr2_in<5 : 0> on block SHA_4RAM is not
+   reconstructed, because there are some missing bus pins.
+WARNING:NetListWriters:306 - Signal bus Addr2_in<5 : 0> on block SHA_IfCtrl is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus S<255 : 0> on block SHA_Primary is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus W<511 : 0> on block SHA_Primary is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus W_39<511 : 0> on block SHA_Primary is
+   not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file sha_top.edif ...
+ngc2edif: Total memory usage is 347128 kilobytes
+
+Parsing EDIF File [./sinfast.data/cache/sha_top_ngc_39638af5.edif]
+Finished Parsing EDIF File [./sinfast.data/cache/sha_top_ngc_39638af5.edif]
+INFO: [Netlist 29-17] Analyzing 40 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+Loading clock regions from /opt/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/spartan6lx/xc6slx150/ClockRegion.xml
+Loading clock buffers from /opt/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/spartan6lx/xc6slx150/ClockBuffers.xml
+Loading package pin functions from /opt/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from /opt/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/spartan6lx/xc6slx150/fgg484/Package.xml
+Loading io standards from /opt/Xilinx/14.2/ISE_DS/PlanAhead/data/./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from /opt/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : /opt/Xilinx/14.2/ISE_DS/PlanAhead/data/./parts/xilinx/spartan6/drc.xml
+WARNING: [Timing 38-83] Timing library cell SRLC32E does not define port A[4] which is referred to in the netlist. The library cell will be ignored and the cell will be treated as a black box for timing purposes.
+WARNING: [Timing 38-83] Timing library cell SRLC32E does not define port A[3] which is referred to in the netlist. The library cell will be ignored and the cell will be treated as a black box for timing purposes.
+WARNING: [Timing 38-83] Timing library cell SRLC32E does not define port A[2] which is referred to in the netlist. The library cell will be ignored and the cell will be treated as a black box for timing purposes.
+WARNING: [Timing 38-83] Timing library cell SRLC32E does not define port A[1] which is referred to in the netlist. The library cell will be ignored and the cell will be treated as a black box for timing purposes.
+WARNING: [Timing 38-83] Timing library cell SRLC32E does not define port A[0] which is referred to in the netlist. The library cell will be ignored and the cell will be treated as a black box for timing purposes.
+Parsing UCF File [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf]
+Finished Parsing UCF File [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf]
+[Sat Aug  4 07:46:26 2012] Launched impl_1...
+Run output will be captured here: /home/j/btcpar/sinfast/sinfast.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:01:01 ; elapsed = 00:00:42 . Memory (MB): peak = 3071.832 ; gain = 356.391
+reset_run impl_1 -noclean_dir
+open_run synth_1 -name netlist_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc6slx150fgg484-3
+Parsing EDIF File [./sinfast.data/cache/sha_top_ngc_39638af5.edif]
+Finished Parsing EDIF File [./sinfast.data/cache/sha_top_ngc_39638af5.edif]
+INFO: [Netlist 29-17] Analyzing 40 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+Loading clock regions from /opt/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/spartan6lx/xc6slx150/ClockRegion.xml
+Loading clock buffers from /opt/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/spartan6lx/xc6slx150/ClockBuffers.xml
+Loading package pin functions from /opt/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from /opt/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/spartan6lx/xc6slx150/fgg484/Package.xml
+Loading io standards from /opt/Xilinx/14.2/ISE_DS/PlanAhead/data/./parts/xilinx/spartan6/IOStandards.xml
+Loading list of drcs for the architecture : /opt/Xilinx/14.2/ISE_DS/PlanAhead/data/./parts/xilinx/spartan6/drc.xml
+WARNING: [Timing 38-83] Timing library cell SRLC32E does not define port A[4] which is referred to in the netlist. The library cell will be ignored and the cell will be treated as a black box for timing purposes.
+WARNING: [Timing 38-83] Timing library cell SRLC32E does not define port A[3] which is referred to in the netlist. The library cell will be ignored and the cell will be treated as a black box for timing purposes.
+WARNING: [Timing 38-83] Timing library cell SRLC32E does not define port A[2] which is referred to in the netlist. The library cell will be ignored and the cell will be treated as a black box for timing purposes.
+WARNING: [Timing 38-83] Timing library cell SRLC32E does not define port A[1] which is referred to in the netlist. The library cell will be ignored and the cell will be treated as a black box for timing purposes.
+WARNING: [Timing 38-83] Timing library cell SRLC32E does not define port A[0] which is referred to in the netlist. The library cell will be ignored and the cell will be treated as a black box for timing purposes.
+Parsing UCF File [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf]
+Finished Parsing UCF File [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 72 instances were transformed.
+  INV => LUT1: 32 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 8 instances
+  RAM32X1S => RAM32X1S (RAMS32): 32 instances
+
+Phase 0 | Netlist Checksum: c3e099ec
+open_run: Time (s): cpu = 00:00:40 ; elapsed = 00:00:26 . Memory (MB): peak = 3071.832 ; gain = 0.000
+resize_pblock SP_s15rturn -add SLICE_X0Y129:SLICE_X3Y147 -remove SLICE_X0Y125:SLICE_X3Y147 -locs keep_all
+resize_pblock SP_s15lturn -from SLICE_X124Y105:SLICE_X127Y129 -to SLICE_X124Y103:SLICE_X127Y127 -locs keep_all
+resize_pblock SP_s15lturn -add SLICE_X124Y103:SLICE_X127Y128 -remove SLICE_X124Y103:SLICE_X127Y127 -locs keep_all
+save_design
+refresh_design
+WARNING: [Timing 38-83] Timing library cell SRLC32E does not define port A[4] which is referred to in the netlist. The library cell will be ignored and the cell will be treated as a black box for timing purposes.
+WARNING: [Timing 38-83] Timing library cell SRLC32E does not define port A[3] which is referred to in the netlist. The library cell will be ignored and the cell will be treated as a black box for timing purposes.
+WARNING: [Timing 38-83] Timing library cell SRLC32E does not define port A[2] which is referred to in the netlist. The library cell will be ignored and the cell will be treated as a black box for timing purposes.
+WARNING: [Timing 38-83] Timing library cell SRLC32E does not define port A[1] which is referred to in the netlist. The library cell will be ignored and the cell will be treated as a black box for timing purposes.
+WARNING: [Timing 38-83] Timing library cell SRLC32E does not define port A[0] which is referred to in the netlist. The library cell will be ignored and the cell will be treated as a black box for timing purposes.
+Parsing UCF File [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf]
+Finished Parsing UCF File [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf]
+refresh_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:10 . Memory (MB): peak = 3124.305 ; gain = 0.000
+refresh_design
+WARNING: [Timing 38-83] Timing library cell SRLC32E does not define port A[4] which is referred to in the netlist. The library cell will be ignored and the cell will be treated as a black box for timing purposes.
+WARNING: [Timing 38-83] Timing library cell SRLC32E does not define port A[3] which is referred to in the netlist. The library cell will be ignored and the cell will be treated as a black box for timing purposes.
+WARNING: [Timing 38-83] Timing library cell SRLC32E does not define port A[2] which is referred to in the netlist. The library cell will be ignored and the cell will be treated as a black box for timing purposes.
+WARNING: [Timing 38-83] Timing library cell SRLC32E does not define port A[1] which is referred to in the netlist. The library cell will be ignored and the cell will be treated as a black box for timing purposes.
+WARNING: [Timing 38-83] Timing library cell SRLC32E does not define port A[0] which is referred to in the netlist. The library cell will be ignored and the cell will be treated as a black box for timing purposes.
+Parsing UCF File [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf]
+Finished Parsing UCF File [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf]
+refresh_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:11 . Memory (MB): peak = 3124.305 ; gain = 0.000
+launch_runs impl_1
+[Sat Aug  4 09:54:25 2012] Launched impl_1...
+Run output will be captured here: /home/j/btcpar/sinfast/sinfast.runs/impl_1_2/runme.log
+launch_runs: Time (s): cpu = 00:00:14 ; elapsed = 00:00:11 . Memory (MB): peak = 3124.305 ; gain = 0.000
+reset_run impl_1 -noclean_dir
+reset_run synth_1
+launch_runs synth_1
+[Sat Aug  4 19:20:25 2012] Launched synth_1...
+Run output will be captured here: /home/j/btcpar/sinfast/sinfast.runs/synth_1/runme.log
+launch_runs impl_1
+Release 14.2 - ngc2edif P.28xd (lin64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Release 14.2 - ngc2edif P.28xd (lin64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design sha_top.ngc ...
+WARNING:NetListWriters:298 - No output is written to sha_top.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:304 - Port bus Addr_out<6 : 0> on block SHA_TaskLoader is
+   not reconstructed, because there are some missing bus pins.
+WARNING:NetListWriters:304 - Port bus Addr_out<6 : 0> on block SHA_MatchFIFO is
+   not reconstructed, because there are some missing bus pins.
+WARNING:NetListWriters:304 - Port bus Addr3_in<6 : 0> on block SHA_4RAM is not
+   reconstructed, because there are some missing bus pins.
+WARNING:NetListWriters:304 - Port bus Addr2_in<5 : 0> on block SHA_4RAM is not
+   reconstructed, because there are some missing bus pins.
+WARNING:NetListWriters:306 - Signal bus Addr2_in<5 : 0> on block SHA_IfCtrl is
+   not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file sha_top.edif ...
+ngc2edif: Total memory usage is 142800 kilobytes
+
+Parsing EDIF File [./sinfast.data/cache/sha_top_ngc_39638af5.edif]
+Finished Parsing EDIF File [./sinfast.data/cache/sha_top_ngc_39638af5.edif]
+INFO: [Netlist 29-17] Analyzing 40 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Timing 38-83] Timing library cell SRLC32E does not define port A[4] which is referred to in the netlist. The library cell will be ignored and the cell will be treated as a black box for timing purposes.
+WARNING: [Timing 38-83] Timing library cell SRLC32E does not define port A[3] which is referred to in the netlist. The library cell will be ignored and the cell will be treated as a black box for timing purposes.
+WARNING: [Timing 38-83] Timing library cell SRLC32E does not define port A[2] which is referred to in the netlist. The library cell will be ignored and the cell will be treated as a black box for timing purposes.
+WARNING: [Timing 38-83] Timing library cell SRLC32E does not define port A[1] which is referred to in the netlist. The library cell will be ignored and the cell will be treated as a black box for timing purposes.
+WARNING: [Timing 38-83] Timing library cell SRLC32E does not define port A[0] which is referred to in the netlist. The library cell will be ignored and the cell will be treated as a black box for timing purposes.
+Parsing UCF File [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell 'SHAFCE/SP/S_39_14' [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf:348]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell 'SHAFCE/SP/S_39_13' [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf:349]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell 'SHAFCE/SP/S_39_12' [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf:350]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell 'SHAFCE/SP/S_39_11' [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf:351]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell 'SHAFCE/SP/S_39_10' [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf:352]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell 'SHAFCE/SP/S_39_9' [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf:353]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell 'SHAFCE/SP/S_39_8' [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf:354]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell 'SHAFCE/SP/S_39_7' [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf:355]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell 'SHAFCE/SP/S_39_6' [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf:356]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell 'SHAFCE/SP/S_39_5' [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf:357]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell 'SHAFCE/SP/S_39_4' [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf:358]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell 'SHAFCE/SP/S_39_3' [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf:359]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell 'SHAFCE/SP/S_39_2' [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf:360]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell 'SHAFCE/SP/S_39_1' [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf:361]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell 'SHAFCE/SP/S_39_0' [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf:362]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell 'SHAFCE/SP/S_39_33' [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf:363]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell 'SHAFCE/SP/S_39_32' [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf:364]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell 'SHAFCE/SP/S_39_31' [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf:365]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell 'SHAFCE/SP/S_39_30' [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf:366]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell 'SHAFCE/SP/S_39_29' [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf:367]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell 'SHAFCE/SP/S_39_28' [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf:368]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell 'SHAFCE/SP/S_39_27' [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf:369]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell 'SHAFCE/SP/S_39_26' [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf:370]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell 'SHAFCE/SP/S_39_25' [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf:371]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell 'SHAFCE/SP/S_39_24' [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf:372]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell 'SHAFCE/SP/S_39_23' [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf:373]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell 'SHAFCE/SP/S_39_22' [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf:374]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell 'SHAFCE/SP/S_39_21' [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf:375]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell 'SHAFCE/SP/S_39_20' [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf:376]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell 'SHAFCE/SP/S_39_19' [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf:377]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell 'SHAFCE/SP/S_39_18' [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf:378]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell 'SHAFCE/SP/S_39_17' [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf:379]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell 'SHAFCE/SP/S_39_16' [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf:380]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell 'SHAFCE/SP/S_39_15' [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf:381]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell 'SHAFCE/SP/S_39_65' [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf:382]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell 'SHAFCE/SP/S_39_64' [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf:383]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell 'SHAFCE/SP/S_39_63' [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf:384]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell 'SHAFCE/SP/S_39_62' [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf:385]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell 'SHAFCE/SP/S_39_61' [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf:386]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell 'SHAFCE/SP/S_39_60' [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf:387]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell 'SHAFCE/SP/S_39_59' [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf:388]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell 'SHAFCE/SP/S_39_58' [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf:389]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell 'SHAFCE/SP/S_39_57' [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf:390]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell 'SHAFCE/SP/S_39_56' [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf:391]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell 'SHAFCE/SP/S_39_55' [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf:392]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell 'SHAFCE/SP/S_39_54' [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf:393]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell 'SHAFCE/SP/S_39_53' [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf:394]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell 'SHAFCE/SP/S_39_52' [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf:395]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell 'SHAFCE/SP/S_39_51' [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf:396]
+WARNING: [Common 17-14] Message 'Constraints 18-11' appears 50 times and further instances of the messages will be disabled. Use the Tcl command set_msg_limit to change the current settings.
+CRITICAL WARNING: [Constraints 18-11] Could not find cell 'SHAFCE/SP/S_39_50' [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf:397]
+Finished Parsing UCF File [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf]
+INFO: [Designutils 20-20] Invalid constraints found, use command 'write_ucf -constraints invalid <file>' to save all the invalid constraints to a file
+[Sat Aug  4 19:21:12 2012] Launched impl_1...
+Run output will be captured here: /home/j/btcpar/sinfast/sinfast.runs/impl_1_3/runme.log
+launch_runs: Time (s): cpu = 00:00:19 ; elapsed = 00:00:14 . Memory (MB): peak = 3124.305 ; gain = 0.000
+refresh_design
+Parsing EDIF File [./sinfast.data/cache/sha_top_ngc_39638af5.edif]
+Finished Parsing EDIF File [./sinfast.data/cache/sha_top_ngc_39638af5.edif]
+INFO: [Netlist 29-17] Analyzing 40 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Loading clock regions from /opt/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/spartan6lx/xc6slx150/ClockRegion.xml
+Loading clock buffers from /opt/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/spartan6lx/xc6slx150/ClockBuffers.xml
+Loading package pin functions from /opt/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from /opt/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/spartan6lx/xc6slx150/fgg484/Package.xml
+Loading io standards from /opt/Xilinx/14.2/ISE_DS/PlanAhead/data/./parts/xilinx/spartan6/IOStandards.xml
+Loading list of drcs for the architecture : /opt/Xilinx/14.2/ISE_DS/PlanAhead/data/./parts/xilinx/spartan6/drc.xml
+WARNING: [Timing 38-83] Timing library cell SRLC32E does not define port A[4] which is referred to in the netlist. The library cell will be ignored and the cell will be treated as a black box for timing purposes.
+WARNING: [Timing 38-83] Timing library cell SRLC32E does not define port A[3] which is referred to in the netlist. The library cell will be ignored and the cell will be treated as a black box for timing purposes.
+WARNING: [Timing 38-83] Timing library cell SRLC32E does not define port A[2] which is referred to in the netlist. The library cell will be ignored and the cell will be treated as a black box for timing purposes.
+WARNING: [Timing 38-83] Timing library cell SRLC32E does not define port A[1] which is referred to in the netlist. The library cell will be ignored and the cell will be treated as a black box for timing purposes.
+WARNING: [Timing 38-83] Timing library cell SRLC32E does not define port A[0] which is referred to in the netlist. The library cell will be ignored and the cell will be treated as a black box for timing purposes.
+Parsing UCF File [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf]
+Finished Parsing UCF File [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf]
+INFO: [Designutils 20-20] Invalid constraints found, use command 'write_ucf -constraints invalid <file>' to save all the invalid constraints to a file
+refresh_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:13 . Memory (MB): peak = 3124.305 ; gain = 0.000
+close_design
+open_run impl_1
+Parsing EDIF File [./sinfast.runs/impl_1_3/sha_top.edf]
+Finished Parsing EDIF File [./sinfast.runs/impl_1_3/sha_top.edf]
+INFO: [Netlist 29-17] Analyzing 40 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Loading clock regions from /opt/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/spartan6lx/xc6slx150/ClockRegion.xml
+Loading clock buffers from /opt/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/spartan6lx/xc6slx150/ClockBuffers.xml
+Loading package pin functions from /opt/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from /opt/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/spartan6lx/xc6slx150/fgg484/Package.xml
+Loading io standards from /opt/Xilinx/14.2/ISE_DS/PlanAhead/data/./parts/xilinx/spartan6/IOStandards.xml
+Loading list of drcs for the architecture : /opt/Xilinx/14.2/ISE_DS/PlanAhead/data/./parts/xilinx/spartan6/drc.xml
+WARNING: [Timing 38-83] Timing library cell SRLC32E does not define port A[4] which is referred to in the netlist. The library cell will be ignored and the cell will be treated as a black box for timing purposes.
+WARNING: [Timing 38-83] Timing library cell SRLC32E does not define port A[3] which is referred to in the netlist. The library cell will be ignored and the cell will be treated as a black box for timing purposes.
+WARNING: [Timing 38-83] Timing library cell SRLC32E does not define port A[2] which is referred to in the netlist. The library cell will be ignored and the cell will be treated as a black box for timing purposes.
+WARNING: [Timing 38-83] Timing library cell SRLC32E does not define port A[1] which is referred to in the netlist. The library cell will be ignored and the cell will be treated as a black box for timing purposes.
+WARNING: [Timing 38-83] Timing library cell SRLC32E does not define port A[0] which is referred to in the netlist. The library cell will be ignored and the cell will be treated as a black box for timing purposes.
+Parsing UCF File [/home/j/btcpar/sinfast/sinfast.runs/impl_1_3/.constrs/sha_top.ucf]
+Finished Parsing UCF File [/home/j/btcpar/sinfast/sinfast.runs/impl_1_3/.constrs/sha_top.ucf]
+INFO: [Designutils 20-20] Invalid constraints found, use command 'write_ucf -constraints invalid <file>' to save all the invalid constraints to a file
+INFO: [Designutils 20-669] Parsing Placement File : /home/j/btcpar/sinfast/sinfast.runs/impl_1_3/sha_top_routed.xdl
+INFO: [Designutils 20-658] Finished Parsing Placement File : /home/j/btcpar/sinfast/sinfast.runs/impl_1_3/sha_top_routed.xdl
+INFO: [Designutils 20-671] Placed 20497 instances
+INFO: [Timing 38-71] No path element with name SHAFCE/SP/S<0>[134]_rt found. It will be ignored.
+INFO: [Timing 38-71] No path element with name SHAFCE/SP/S<0>[36]_rt found. It will be ignored.
+INFO: [Timing 38-71] No path element with name SHAFCE/SP/S<0>[242]_rt found. It will be ignored.
+INFO: [Timing 38-71] No path element with name SHAFCE/SP/S<0>[118]_rt found. It will be ignored.
+INFO: [Timing 38-71] No path element with name SHAFCE/SP/S<0>[52]_rt found. It will be ignored.
+INFO: [Timing 38-71] No path element with name SHAFCE/SP/S<0>[132]_rt found. It will be ignored.
+INFO: [Timing 38-71] No path element with name SHAFCE/SP/S<0>[110]_rt found. It will be ignored.
+INFO: [Timing 38-71] No path element with name SHAFCE/SP/S<0>[250]_rt found. It will be ignored.
+INFO: [Timing 38-71] No path element with name SHAFCE/SP/S<0>[198]_rt found. It will be ignored.
+INFO: [Timing 38-71] No path element with name SHAFCE/SP/S<0>[154]_rt found. It will be ignored.
+INFO: [Timing 38-71] No path element with name SHAFCE/SP/S<0>[142]_rt found. It will be ignored.
+INFO: [Timing 38-71] No path element with name SHAFCE/SP/S<0>[30]_rt found. It will be ignored.
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 70 instances were transformed.
+  INV => LUT1: 30 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 8 instances
+  RAM32X1S => RAM32X1S (RAMS32): 32 instances
+
+Phase 0 | Netlist Checksum: 7381b12e
+open_run: Time (s): cpu = 00:00:25 ; elapsed = 00:00:20 . Memory (MB): peak = 3124.305 ; gain = 0.000
+set_property -name {steps.xst.args.More Options} -value {-use_clock_enable yes -use_sync_set yes -use_sync_reset yes} -objects [get_runs synth_1]
+reset_run synth_1
+launch_runs synth_1
+[Sat Aug  4 23:44:09 2012] Launched synth_1...
+Run output will be captured here: /home/j/btcpar/sinfast/sinfast.runs/synth_1/runme.log
+launch_runs impl_1
+Release 14.2 - ngc2edif P.28xd (lin64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Release 14.2 - ngc2edif P.28xd (lin64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design sha_top.ngc ...
+WARNING:NetListWriters:298 - No output is written to sha_top.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:304 - Port bus Addr_out<6 : 0> on block SHA_TaskLoader is
+   not reconstructed, because there are some missing bus pins.
+WARNING:NetListWriters:304 - Port bus Addr_out<6 : 0> on block SHA_MatchFIFO is
+   not reconstructed, because there are some missing bus pins.
+WARNING:NetListWriters:304 - Port bus Addr3_in<6 : 0> on block SHA_4RAM is not
+   reconstructed, because there are some missing bus pins.
+WARNING:NetListWriters:304 - Port bus Addr2_in<5 : 0> on block SHA_4RAM is not
+   reconstructed, because there are some missing bus pins.
+WARNING:NetListWriters:306 - Signal bus Addr2_in<5 : 0> on block SHA_IfCtrl is
+   not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file sha_top.edif ...
+ngc2edif: Total memory usage is 142812 kilobytes
+
+Parsing EDIF File [./sinfast.data/cache/sha_top_ngc_39638af5.edif]
+Finished Parsing EDIF File [./sinfast.data/cache/sha_top_ngc_39638af5.edif]
+INFO: [Netlist 29-17] Analyzing 40 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Timing 38-83] Timing library cell SRLC32E does not define port A[4] which is referred to in the netlist. The library cell will be ignored and the cell will be treated as a black box for timing purposes.
+WARNING: [Timing 38-83] Timing library cell SRLC32E does not define port A[3] which is referred to in the netlist. The library cell will be ignored and the cell will be treated as a black box for timing purposes.
+WARNING: [Timing 38-83] Timing library cell SRLC32E does not define port A[2] which is referred to in the netlist. The library cell will be ignored and the cell will be treated as a black box for timing purposes.
+WARNING: [Timing 38-83] Timing library cell SRLC32E does not define port A[1] which is referred to in the netlist. The library cell will be ignored and the cell will be treated as a black box for timing purposes.
+WARNING: [Timing 38-83] Timing library cell SRLC32E does not define port A[0] which is referred to in the netlist. The library cell will be ignored and the cell will be treated as a black box for timing purposes.
+Parsing UCF File [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf]
+Finished Parsing UCF File [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf]
+INFO: [Designutils 20-20] Invalid constraints found, use command 'write_ucf -constraints invalid <file>' to save all the invalid constraints to a file
+[Sat Aug  4 23:47:45 2012] Launched impl_1...
+Run output will be captured here: /home/j/btcpar/sinfast/sinfast.runs/impl_1_3/runme.log
+launch_runs: Time (s): cpu = 00:00:20 ; elapsed = 00:00:13 . Memory (MB): peak = 3124.305 ; gain = 0.000
+refresh_design
+Parsing EDIF File [./sinfast.runs/impl_1_3/sha_top.edf]
+Finished Parsing EDIF File [./sinfast.runs/impl_1_3/sha_top.edf]
+INFO: [Netlist 29-17] Analyzing 40 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Loading clock regions from /opt/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/spartan6lx/xc6slx150/ClockRegion.xml
+Loading clock buffers from /opt/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/spartan6lx/xc6slx150/ClockBuffers.xml
+Loading package pin functions from /opt/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from /opt/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/spartan6lx/xc6slx150/fgg484/Package.xml
+Loading io standards from /opt/Xilinx/14.2/ISE_DS/PlanAhead/data/./parts/xilinx/spartan6/IOStandards.xml
+Loading list of drcs for the architecture : /opt/Xilinx/14.2/ISE_DS/PlanAhead/data/./parts/xilinx/spartan6/drc.xml
+WARNING: [Timing 38-83] Timing library cell SRLC32E does not define port A[4] which is referred to in the netlist. The library cell will be ignored and the cell will be treated as a black box for timing purposes.
+WARNING: [Timing 38-83] Timing library cell SRLC32E does not define port A[3] which is referred to in the netlist. The library cell will be ignored and the cell will be treated as a black box for timing purposes.
+WARNING: [Timing 38-83] Timing library cell SRLC32E does not define port A[2] which is referred to in the netlist. The library cell will be ignored and the cell will be treated as a black box for timing purposes.
+WARNING: [Timing 38-83] Timing library cell SRLC32E does not define port A[1] which is referred to in the netlist. The library cell will be ignored and the cell will be treated as a black box for timing purposes.
+WARNING: [Timing 38-83] Timing library cell SRLC32E does not define port A[0] which is referred to in the netlist. The library cell will be ignored and the cell will be treated as a black box for timing purposes.
+Parsing UCF File [/home/j/btcpar/sinfast/sinfast.runs/impl_1_3/.constrs/sha_top.ucf]
+Finished Parsing UCF File [/home/j/btcpar/sinfast/sinfast.runs/impl_1_3/.constrs/sha_top.ucf]
+INFO: [Designutils 20-20] Invalid constraints found, use command 'write_ucf -constraints invalid <file>' to save all the invalid constraints to a file
+INFO: [Designutils 20-669] Parsing Placement File : /home/j/btcpar/sinfast/sinfast.runs/impl_1_3/sha_top_routed.xdl
+INFO: [Designutils 20-658] Finished Parsing Placement File : /home/j/btcpar/sinfast/sinfast.runs/impl_1_3/sha_top_routed.xdl
+INFO: [Designutils 20-671] Placed 20497 instances
+INFO: [Timing 38-71] No path element with name SHAFCE/SP/S<0>[74]_rt found. It will be ignored.
+INFO: [Timing 38-71] No path element with name SHAFCE/SP/S<0>[126]_rt found. It will be ignored.
+INFO: [Timing 38-71] No path element with name SHAFCE/SP/S<0>[164]_rt found. It will be ignored.
+INFO: [Timing 38-71] No path element with name SHAFCE/SP/S<0>[30]_rt found. It will be ignored.
+INFO: [Timing 38-71] No path element with name SHAFCE/SP/S<0>[154]_rt found. It will be ignored.
+INFO: [Timing 38-71] No path element with name SHAFCE/SP/S<0>[250]_rt found. It will be ignored.
+INFO: [Timing 38-71] No path element with name SHAFCE/SP/S<0>[36]_rt found. It will be ignored.
+refresh_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:20 . Memory (MB): peak = 3124.305 ; gain = 0.000
+open_rtl_design -name rtl_1
+Design is defaulting to project part: xc6slx150fgg484-3
+Using Verific elaboration
+Parsing VHDL file "/opt/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "/opt/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "/home/j/btcpar/sinfast/sinfast.srcs/sources_1/new/sha_wround.vhd" into library work
+Parsing VHDL file "/home/j/btcpar/sinfast/sinfast.srcs/sources_1/new/sha_round.vhd" into library work
+Parsing VHDL file "/home/j/btcpar/sinfast/sinfast.srcs/sources_1/new/sha_noncectr.vhd" into library work
+Parsing VHDL file "/home/j/btcpar/sinfast/sinfast.srcs/sources_1/new/sha_primary.vhd" into library work
+Parsing VHDL file "/home/j/btcpar/sinfast/sinfast.srcs/sources_1/new/sha_secondary.vhd" into library work
+Parsing VHDL file "/home/j/btcpar/sinfast/sinfast.srcs/sources_1/new/sha_fast.vhd" into library work
+Parsing VHDL file "/home/j/btcpar/sinfast/sinfast.srcs/sources_1/new/shaspi.vhd" into library work
+Parsing VHDL file "/home/j/btcpar/sinfast/sinfast.srcs/sources_1/new/duoconf.vhd" into library work
+Parsing VHDL file "/home/j/btcpar/sinfast/sinfast.srcs/sources_1/new/sha_top.vhd" into library work
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Timing 38-83] Timing library cell SRLC32E does not define port A[4] which is referred to in the netlist. The library cell will be ignored and the cell will be treated as a black box for timing purposes.
+WARNING: [Timing 38-83] Timing library cell SRLC32E does not define port A[3] which is referred to in the netlist. The library cell will be ignored and the cell will be treated as a black box for timing purposes.
+WARNING: [Timing 38-83] Timing library cell SRLC32E does not define port A[2] which is referred to in the netlist. The library cell will be ignored and the cell will be treated as a black box for timing purposes.
+WARNING: [Timing 38-83] Timing library cell SRLC32E does not define port A[1] which is referred to in the netlist. The library cell will be ignored and the cell will be treated as a black box for timing purposes.
+WARNING: [Common 17-14] Message 'Timing 38-83' appears 50 times and further instances of the messages will be disabled. Use the Tcl command set_msg_limit to change the current settings.
+WARNING: [Timing 38-83] Timing library cell SRLC32E does not define port A[0] which is referred to in the netlist. The library cell will be ignored and the cell will be treated as a black box for timing purposes.
+Parsing UCF File [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf]
+Finished Parsing UCF File [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf]
+INFO: [Designutils 20-20] Invalid constraints found, use command 'write_ucf -constraints invalid <file>' to save all the invalid constraints to a file
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 8 instances were transformed.
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 8 instances
+
+Phase 0 | Netlist Checksum: 9c1280e3
+open_rtl_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:12 . Memory (MB): peak = 3124.441 ; gain = 0.012
+reset_run synth_1
+launch_runs synth_1
+[Sun Aug  5 00:10:42 2012] Launched synth_1...
+Run output will be captured here: /home/j/btcpar/sinfast/sinfast.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1
+[Sun Aug  5 00:11:14 2012] Launched synth_1...
+Run output will be captured here: /home/j/btcpar/sinfast/sinfast.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1
+[Sun Aug  5 00:12:14 2012] Launched synth_1...
+Run output will be captured here: /home/j/btcpar/sinfast/sinfast.runs/synth_1/runme.log
+refresh_design
+Using Verific elaboration
+Parsing VHDL file "/opt/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "/opt/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "/home/j/btcpar/sinfast/sinfast.srcs/sources_1/new/sha_wround.vhd" into library work
+Parsing VHDL file "/home/j/btcpar/sinfast/sinfast.srcs/sources_1/new/sha_round.vhd" into library work
+Parsing VHDL file "/home/j/btcpar/sinfast/sinfast.srcs/sources_1/new/sha_noncectr.vhd" into library work
+Parsing VHDL file "/home/j/btcpar/sinfast/sinfast.srcs/sources_1/new/sha_primary.vhd" into library work
+Parsing VHDL file "/home/j/btcpar/sinfast/sinfast.srcs/sources_1/new/sha_secondary.vhd" into library work
+Parsing VHDL file "/home/j/btcpar/sinfast/sinfast.srcs/sources_1/new/sha_fast.vhd" into library work
+Parsing VHDL file "/home/j/btcpar/sinfast/sinfast.srcs/sources_1/new/shaspi.vhd" into library work
+Parsing VHDL file "/home/j/btcpar/sinfast/sinfast.srcs/sources_1/new/duoconf.vhd" into library work
+Parsing VHDL file "/home/j/btcpar/sinfast/sinfast.srcs/sources_1/new/sha_top.vhd" into library work
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Parsing UCF File [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf]
+Finished Parsing UCF File [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf]
+INFO: [Designutils 20-20] Invalid constraints found, use command 'write_ucf -constraints invalid <file>' to save all the invalid constraints to a file
+refresh_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 3124.441 ; gain = 0.000
+launch_runs impl_1
+Release 14.2 - ngc2edif P.28xd (lin64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Release 14.2 - ngc2edif P.28xd (lin64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design sha_top.ngc ...
+WARNING:NetListWriters:298 - No output is written to sha_top.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:304 - Port bus Addr_out<6 : 0> on block SHA_TaskLoader is
+   not reconstructed, because there are some missing bus pins.
+WARNING:NetListWriters:304 - Port bus Addr_out<6 : 0> on block SHA_MatchFIFO is
+   not reconstructed, because there are some missing bus pins.
+WARNING:NetListWriters:304 - Port bus Addr3_in<6 : 0> on block SHA_4RAM is not
+   reconstructed, because there are some missing bus pins.
+WARNING:NetListWriters:304 - Port bus Addr2_in<5 : 0> on block SHA_4RAM is not
+   reconstructed, because there are some missing bus pins.
+WARNING:NetListWriters:306 - Signal bus Addr2_in<5 : 0> on block SHA_IfCtrl is
+   not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file sha_top.edif ...
+ngc2edif: Total memory usage is 143004 kilobytes
+
+Parsing EDIF File [./sinfast.data/cache/sha_top_ngc_39638af5.edif]
+Finished Parsing EDIF File [./sinfast.data/cache/sha_top_ngc_39638af5.edif]
+INFO: [Netlist 29-17] Analyzing 40 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Parsing UCF File [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf]
+Finished Parsing UCF File [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf]
+INFO: [Designutils 20-20] Invalid constraints found, use command 'write_ucf -constraints invalid <file>' to save all the invalid constraints to a file
+[Sun Aug  5 00:15:16 2012] Launched impl_1...
+Run output will be captured here: /home/j/btcpar/sinfast/sinfast.runs/impl_1_3/runme.log
+launch_runs: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 3124.441 ; gain = 0.000
+current_design impl_1
+refresh_design
+Parsing EDIF File [./sinfast.runs/impl_1_3/sha_top.edf]
+Finished Parsing EDIF File [./sinfast.runs/impl_1_3/sha_top.edf]
+INFO: [Netlist 29-17] Analyzing 40 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Parsing UCF File [/home/j/btcpar/sinfast/sinfast.runs/impl_1_3/.constrs/sha_top.ucf]
+Finished Parsing UCF File [/home/j/btcpar/sinfast/sinfast.runs/impl_1_3/.constrs/sha_top.ucf]
+INFO: [Designutils 20-20] Invalid constraints found, use command 'write_ucf -constraints invalid <file>' to save all the invalid constraints to a file
+INFO: [Designutils 20-669] Parsing Placement File : /home/j/btcpar/sinfast/sinfast.runs/impl_1_3/sha_top_routed.xdl
+INFO: [Designutils 20-658] Finished Parsing Placement File : /home/j/btcpar/sinfast/sinfast.runs/impl_1_3/sha_top_routed.xdl
+INFO: [Designutils 20-671] Placed 20465 instances
+INFO: [Timing 38-71] No path element with name SHASPIinst/SHA_TaskLoader_inst/DCMLoader_inst/pc[0]_rt found. It will be ignored.
+INFO: [Timing 38-71] No path element with name SHASPIinst/SHA_TaskLoader_inst/DCMLoader_inst/pc[0]_rt found. It will be ignored.
+INFO: [Timing 38-71] No path element with name SHASPIinst/SHA_TaskLoader_inst/DCMLoader_inst/pc[0]_rt found. It will be ignored.
+INFO: [Timing 38-71] No path element with name SHASPIinst/SHA_TaskLoader_inst/DCMLoader_inst/pc[0]_rt found. It will be ignored.
+INFO: [Timing 38-71] No path element with name SHASPIinst/SHA_TaskLoader_inst/DCMLoader_inst/pc[1]_rt found. It will be ignored.
+INFO: [Timing 38-71] No path element with name SHASPIinst/SHA_TaskLoader_inst/DCMLoader_inst/pc[0]_rt found. It will be ignored.
+INFO: [Timing 38-71] No path element with name SHASPIinst/SHA_TaskLoader_inst/DCMLoader_inst/pc[1]_rt found. It will be ignored.
+INFO: [Timing 38-71] No path element with name SHASPIinst/SHA_TaskLoader_inst/DCMLoader_inst/pc[1]_rt found. It will be ignored.
+INFO: [Timing 38-71] No path element with name SHAFCE/SP/S<0>[206]_rt found. It will be ignored.
+INFO: [Timing 38-71] No path element with name SHAFCE/SP/S<0>[12]_rt found. It will be ignored.
+INFO: [Timing 38-71] No path element with name SHAFCE/SP/S<0>[214]_rt found. It will be ignored.
+INFO: [Timing 38-71] No path element with name SHAFCE/SP/S<0>[100]_rt found. It will be ignored.
+INFO: [Timing 38-71] No path element with name SHAFCE/SP/S<0>[212]_rt found. It will be ignored.
+INFO: [Timing 38-71] No path element with name SHAFCE/SP/S<0>[62]_rt found. It will be ignored.
+INFO: [Timing 38-71] No path element with name SHAFCE/SP/S<0>[240]_rt found. It will be ignored.
+INFO: [Timing 38-71] No path element with name SHAFCE/SP/S<0>[188]_rt found. It will be ignored.
+INFO: [Timing 38-71] No path element with name SHAFCE/SP/S<0>[52]_rt found. It will be ignored.
+INFO: [Timing 38-71] No path element with name SHAFCE/SP/S<0>[126]_rt found. It will be ignored.
+INFO: [Timing 38-71] No path element with name SHAFCE/SP/S<0>[196]_rt found. It will be ignored.
+INFO: [Timing 38-71] No path element with name SHAFCE/SP/S<0>[74]_rt found. It will be ignored.
+refresh_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:17 . Memory (MB): peak = 3124.441 ; gain = 0.000
+reset_run synth_1
+launch_runs synth_1
+[Sun Aug  5 00:34:19 2012] Launched synth_1...
+Run output will be captured here: /home/j/btcpar/sinfast/sinfast.runs/synth_1/runme.log
+launch_runs impl_1
+Release 14.2 - ngc2edif P.28xd (lin64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Release 14.2 - ngc2edif P.28xd (lin64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design sha_top.ngc ...
+WARNING:NetListWriters:298 - No output is written to sha_top.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:304 - Port bus Addr_out<6 : 0> on block SHA_TaskLoader is
+   not reconstructed, because there are some missing bus pins.
+WARNING:NetListWriters:304 - Port bus Addr_out<6 : 0> on block SHA_MatchFIFO is
+   not reconstructed, because there are some missing bus pins.
+WARNING:NetListWriters:304 - Port bus Addr3_in<6 : 0> on block SHA_4RAM is not
+   reconstructed, because there are some missing bus pins.
+WARNING:NetListWriters:304 - Port bus Addr2_in<5 : 0> on block SHA_4RAM is not
+   reconstructed, because there are some missing bus pins.
+WARNING:NetListWriters:306 - Signal bus Addr2_in<5 : 0> on block SHA_IfCtrl is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus S<255 : 0> on block SHA_Primary is not
+   reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file sha_top.edif ...
+ngc2edif: Total memory usage is 203384 kilobytes
+
+Parsing EDIF File [./sinfast.data/cache/sha_top_ngc_39638af5.edif]
+Finished Parsing EDIF File [./sinfast.data/cache/sha_top_ngc_39638af5.edif]
+INFO: [Netlist 29-17] Analyzing 40 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-43] Netlist 'sha_top' is not ideal for floorplanning, since the cellview 'SHA_Primary' defined in file 'sha_top.ngc' contains large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+Parsing UCF File [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf]
+Finished Parsing UCF File [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf]
+INFO: [Designutils 20-20] Invalid constraints found, use command 'write_ucf -constraints invalid <file>' to save all the invalid constraints to a file
+[Sun Aug  5 00:35:39 2012] Launched impl_1...
+Run output will be captured here: /home/j/btcpar/sinfast/sinfast.runs/impl_1_3/runme.log
+launch_runs: Time (s): cpu = 00:00:19 ; elapsed = 00:00:18 . Memory (MB): peak = 3124.441 ; gain = 0.000
+reset_run impl_1 -noclean_dir
+reset_run synth_1
+launch_runs synth_1
+[Sun Aug  5 00:38:15 2012] Launched synth_1...
+Run output will be captured here: /home/j/btcpar/sinfast/sinfast.runs/synth_1/runme.log
+launch_runs impl_1
+Release 14.2 - ngc2edif P.28xd (lin64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Release 14.2 - ngc2edif P.28xd (lin64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design sha_top.ngc ...
+WARNING:NetListWriters:298 - No output is written to sha_top.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:304 - Port bus Addr_out<6 : 0> on block SHA_TaskLoader is
+   not reconstructed, because there are some missing bus pins.
+WARNING:NetListWriters:304 - Port bus Addr_out<6 : 0> on block SHA_MatchFIFO is
+   not reconstructed, because there are some missing bus pins.
+WARNING:NetListWriters:304 - Port bus Addr3_in<6 : 0> on block SHA_4RAM is not
+   reconstructed, because there are some missing bus pins.
+WARNING:NetListWriters:304 - Port bus Addr2_in<5 : 0> on block SHA_4RAM is not
+   reconstructed, because there are some missing bus pins.
+WARNING:NetListWriters:306 - Signal bus Addr2_in<5 : 0> on block SHA_IfCtrl is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus S<255 : 0> on block SHA_Primary is not
+   reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file sha_top.edif ...
+ngc2edif: Total memory usage is 203504 kilobytes
+
+Parsing EDIF File [./sinfast.data/cache/sha_top_ngc_39638af5.edif]
+Finished Parsing EDIF File [./sinfast.data/cache/sha_top_ngc_39638af5.edif]
+INFO: [Netlist 29-17] Analyzing 40 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-43] Netlist 'sha_top' is not ideal for floorplanning, since the cellview 'SHA_Primary' defined in file 'sha_top.ngc' contains large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+Parsing UCF File [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf]
+Finished Parsing UCF File [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf]
+INFO: [Designutils 20-20] Invalid constraints found, use command 'write_ucf -constraints invalid <file>' to save all the invalid constraints to a file
+[Sun Aug  5 00:39:37 2012] Launched impl_1...
+Run output will be captured here: /home/j/btcpar/sinfast/sinfast.runs/impl_1_4/runme.log
+launch_runs: Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 3124.441 ; gain = 0.000
+refresh_design
+Parsing EDIF File [./sinfast.runs/impl_1_4/sha_top.edf]
+Finished Parsing EDIF File [./sinfast.runs/impl_1_4/sha_top.edf]
+INFO: [Netlist 29-17] Analyzing 40 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-43] Netlist 'sha_top' is not ideal for floorplanning, since the cellview 'SHA_Primary' defined in file 'sha_top.edf' contains large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+Parsing UCF File [/home/j/btcpar/sinfast/sinfast.runs/impl_1_4/.constrs/sha_top.ucf]
+Finished Parsing UCF File [/home/j/btcpar/sinfast/sinfast.runs/impl_1_4/.constrs/sha_top.ucf]
+INFO: [Designutils 20-20] Invalid constraints found, use command 'write_ucf -constraints invalid <file>' to save all the invalid constraints to a file
+INFO: [Designutils 20-669] Parsing Placement File : /home/j/btcpar/sinfast/sinfast.runs/impl_1_4/sha_top_routed.xdl
+INFO: [Designutils 20-658] Finished Parsing Placement File : /home/j/btcpar/sinfast/sinfast.runs/impl_1_4/sha_top_routed.xdl
+INFO: [Designutils 20-671] Placed 53492 instances
+INFO: [Timing 38-71] No path element with name SHAFCE/SP/S<0>[174]_rt found. It will be ignored.
+INFO: [Timing 38-71] No path element with name SHAFCE/SP/S<0>[212]_rt found. It will be ignored.
+INFO: [Timing 38-71] No path element with name SHAFCE/SP/S<0>[54]_rt found. It will be ignored.
+INFO: [Timing 38-71] No path element with name SHAFCE/SP/S<0>[222]_rt found. It will be ignored.
+INFO: [Timing 38-71] No path element with name SHAFCE/SP/S<0>[214]_rt found. It will be ignored.
+INFO: [Timing 38-71] No path element with name SHAFCE/SP/S<0>[82]_rt found. It will be ignored.
+refresh_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:32 . Memory (MB): peak = 3124.441 ; gain = 0.000
+reset_run impl_1
+launch_runs impl_1
+Parsing EDIF File [./sinfast.data/cache/sha_top_ngc_39638af5.edif]
+Finished Parsing EDIF File [./sinfast.data/cache/sha_top_ngc_39638af5.edif]
+INFO: [Netlist 29-17] Analyzing 40 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-43] Netlist 'sha_top' is not ideal for floorplanning, since the cellview 'SHA_Primary' defined in file 'sha_top.ngc' contains large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+Parsing UCF File [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf]
+Finished Parsing UCF File [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf]
+INFO: [Designutils 20-20] Invalid constraints found, use command 'write_ucf -constraints invalid <file>' to save all the invalid constraints to a file
+[Sun Aug  5 01:03:46 2012] Launched impl_1...
+Run output will be captured here: /home/j/btcpar/sinfast/sinfast.runs/impl_1_4/runme.log
+launch_runs: Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 3124.441 ; gain = 0.000
+refresh_design
+Parsing EDIF File [./sinfast.runs/impl_1_4/sha_top.edf]
+Finished Parsing EDIF File [./sinfast.runs/impl_1_4/sha_top.edf]
+INFO: [Netlist 29-17] Analyzing 40 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-43] Netlist 'sha_top' is not ideal for floorplanning, since the cellview 'SHA_Primary' defined in file 'sha_top.edf' contains large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+Parsing UCF File [/home/j/btcpar/sinfast/sinfast.runs/impl_1_4/.constrs/sha_top.ucf]
+Finished Parsing UCF File [/home/j/btcpar/sinfast/sinfast.runs/impl_1_4/.constrs/sha_top.ucf]
+INFO: [Designutils 20-20] Invalid constraints found, use command 'write_ucf -constraints invalid <file>' to save all the invalid constraints to a file
+INFO: [Designutils 20-669] Parsing Placement File : /home/j/btcpar/sinfast/sinfast.runs/impl_1_4/sha_top_routed.xdl
+INFO: [Designutils 20-658] Finished Parsing Placement File : /home/j/btcpar/sinfast/sinfast.runs/impl_1_4/sha_top_routed.xdl
+INFO: [Designutils 20-671] Placed 53492 instances
+INFO: [Timing 38-71] No path element with name SHAFCE/SP/S<0>[174]_rt found. It will be ignored.
+INFO: [Timing 38-71] No path element with name SHAFCE/SP/S<0>[212]_rt found. It will be ignored.
+INFO: [Timing 38-71] No path element with name SHAFCE/SP/S<0>[54]_rt found. It will be ignored.
+INFO: [Timing 38-71] No path element with name SHAFCE/SP/S<0>[222]_rt found. It will be ignored.
+WARNING: [Common 17-14] Message 'Timing 38-71' appears 50 times and further instances of the messages will be disabled. Use the Tcl command set_msg_limit to change the current settings.
+INFO: [Timing 38-71] No path element with name SHAFCE/SP/S<0>[214]_rt found. It will be ignored.
+refresh_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:32 . Memory (MB): peak = 3124.441 ; gain = 0.000
+resize_pblock SP_rndf27 -add SLICE_X68Y130:SLICE_X71Y147 -remove SLICE_X60Y130:SLICE_X71Y147 -locs keep_all
+undo
+INFO: [Common 17-17] undo 'resize_pblock SP_rndf27 -add SLICE_X68Y130:SLICE_X71Y147 -remove SLICE_X60Y130:SLICE_X71Y147 -locs keep_all'
+open_run synth_1 -name netlist_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc6slx150fgg484-3
+Parsing EDIF File [./sinfast.data/cache/sha_top_ngc_39638af5.edif]
+Finished Parsing EDIF File [./sinfast.data/cache/sha_top_ngc_39638af5.edif]
+INFO: [Netlist 29-17] Analyzing 40 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-43] Netlist 'sha_top' is not ideal for floorplanning, since the cellview 'SHA_Primary' defined in file 'sha_top.ngc' contains large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+Parsing UCF File [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf]
+Finished Parsing UCF File [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf]
+INFO: [Designutils 20-20] Invalid constraints found, use command 'write_ucf -constraints invalid <file>' to save all the invalid constraints to a file
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 70 instances were transformed.
+  INV => LUT1: 30 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 8 instances
+  RAM32X1S => RAM32X1S (RAMS32): 32 instances
+
+Phase 0 | Netlist Checksum: d17be87a
+open_run: Time (s): cpu = 00:00:19 ; elapsed = 00:00:17 . Memory (MB): peak = 3132.691 ; gain = 8.250
+refresh_design
+Parsing UCF File [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf]
+Finished Parsing UCF File [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf]
+INFO: [Designutils 20-20] Invalid constraints found, use command 'write_ucf -constraints invalid <file>' to save all the invalid constraints to a file
+refresh_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 3132.691 ; gain = 0.000
+set_property {steps.xst.args.More Options} {} [get_runs synth_1]
+reset_run synth_1
+launch_runs synth_1
+[Sun Aug  5 01:30:06 2012] Launched synth_1...
+Run output will be captured here: /home/j/btcpar/sinfast/sinfast.runs/synth_1/runme.log
+refresh_design
+Release 14.2 - ngc2edif P.28xd (lin64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Release 14.2 - ngc2edif P.28xd (lin64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design sha_top.ngc ...
+WARNING:NetListWriters:298 - No output is written to sha_top.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:304 - Port bus Addr_out<6 : 0> on block SHA_TaskLoader is
+   not reconstructed, because there are some missing bus pins.
+WARNING:NetListWriters:304 - Port bus Addr_out<6 : 0> on block SHA_MatchFIFO is
+   not reconstructed, because there are some missing bus pins.
+WARNING:NetListWriters:304 - Port bus Addr3_in<6 : 0> on block SHA_4RAM is not
+   reconstructed, because there are some missing bus pins.
+WARNING:NetListWriters:304 - Port bus Addr2_in<5 : 0> on block SHA_4RAM is not
+   reconstructed, because there are some missing bus pins.
+WARNING:NetListWriters:306 - Signal bus Addr2_in<5 : 0> on block SHA_IfCtrl is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus S<255 : 0> on block SHA_Primary is not
+   reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file sha_top.edif ...
+ngc2edif: Total memory usage is 203508 kilobytes
+
+Parsing EDIF File [./sinfast.data/cache/sha_top_ngc_39638af5.edif]
+Finished Parsing EDIF File [./sinfast.data/cache/sha_top_ngc_39638af5.edif]
+INFO: [Netlist 29-17] Analyzing 40 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-43] Netlist 'sha_top' is not ideal for floorplanning, since the cellview 'SHA_Primary' defined in file 'sha_top.ngc' contains large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+Parsing UCF File [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf]
+Finished Parsing UCF File [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf]
+INFO: [Designutils 20-20] Invalid constraints found, use command 'write_ucf -constraints invalid <file>' to save all the invalid constraints to a file
+refresh_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:21 . Memory (MB): peak = 3132.691 ; gain = 0.000
+set_property -name {steps.xst.args.More Options} -value {-use_clock_enable yes -use_sync_set yes -use_sync_reset yes -keep_hierarchy yes} -objects [get_runs synth_1]
+reset_run synth_1
+launch_runs synth_1
+[Sun Aug  5 01:32:19 2012] Launched synth_1...
+Run output will be captured here: /home/j/btcpar/sinfast/sinfast.runs/synth_1/runme.log
+refresh_design
+Release 14.2 - ngc2edif P.28xd (lin64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Release 14.2 - ngc2edif P.28xd (lin64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design sha_top.ngc ...
+WARNING:NetListWriters:298 - No output is written to sha_top.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus S<255 : 0> on block SHA_Primary is not
+   reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file sha_top.edif ...
+ngc2edif: Total memory usage is 202780 kilobytes
+
+Parsing EDIF File [./sinfast.data/cache/sha_top_ngc_39638af5.edif]
+Finished Parsing EDIF File [./sinfast.data/cache/sha_top_ngc_39638af5.edif]
+INFO: [Netlist 29-17] Analyzing 40 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Parsing UCF File [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf]
+Finished Parsing UCF File [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf]
+INFO: [Designutils 20-20] Invalid constraints found, use command 'write_ucf -constraints invalid <file>' to save all the invalid constraints to a file
+refresh_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 3136.723 ; gain = 4.031
+launch_runs impl_1
+[Sun Aug  5 01:34:06 2012] Launched impl_1...
+Run output will be captured here: /home/j/btcpar/sinfast/sinfast.runs/impl_1_4/runme.log
+reset_run impl_1
+reset_run: Time (s): cpu = 00:00:27 ; elapsed = 00:00:18 . Memory (MB): peak = 3139.848 ; gain = 0.000
+launch_runs impl_1
+Parsing EDIF File [./sinfast.data/cache/sha_top_ngc_39638af5.edif]
+Finished Parsing EDIF File [./sinfast.data/cache/sha_top_ngc_39638af5.edif]
+INFO: [Netlist 29-17] Analyzing 40 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Parsing UCF File [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf]
+Finished Parsing UCF File [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf]
+INFO: [Designutils 20-20] Invalid constraints found, use command 'write_ucf -constraints invalid <file>' to save all the invalid constraints to a file
+[Sun Aug  5 11:11:51 2012] Launched impl_1...
+Run output will be captured here: /home/j/btcpar/sinfast/sinfast.runs/impl_1_4/runme.log
+launch_runs: Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 3221.887 ; gain = 82.039
+refresh_design
+Parsing UCF File [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf]
+Finished Parsing UCF File [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf]
+INFO: [Designutils 20-20] Invalid constraints found, use command 'write_ucf -constraints invalid <file>' to save all the invalid constraints to a file
+refresh_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 3221.887 ; gain = 0.000
+current_design impl_1
+refresh_design
+Parsing EDIF File [./sinfast.runs/impl_1_4/sha_top.edf]
+Finished Parsing EDIF File [./sinfast.runs/impl_1_4/sha_top.edf]
+INFO: [Netlist 29-17] Analyzing 40 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Parsing UCF File [/home/j/btcpar/sinfast/sinfast.runs/impl_1_4/.constrs/sha_top.ucf]
+Finished Parsing UCF File [/home/j/btcpar/sinfast/sinfast.runs/impl_1_4/.constrs/sha_top.ucf]
+INFO: [Designutils 20-20] Invalid constraints found, use command 'write_ucf -constraints invalid <file>' to save all the invalid constraints to a file
+INFO: [Designutils 20-669] Parsing Placement File : /home/j/btcpar/sinfast/sinfast.runs/impl_1_4/sha_top_routed.xdl
+INFO: [Designutils 20-658] Finished Parsing Placement File : /home/j/btcpar/sinfast/sinfast.runs/impl_1_4/sha_top_routed.xdl
+INFO: [Designutils 20-671] Placed 53755 instances
+refresh_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:34 . Memory (MB): peak = 3221.887 ; gain = 0.000
+reset_run impl_1
+launch_runs impl_1
+Parsing EDIF File [./sinfast.data/cache/sha_top_ngc_39638af5.edif]
+Finished Parsing EDIF File [./sinfast.data/cache/sha_top_ngc_39638af5.edif]
+INFO: [Netlist 29-17] Analyzing 40 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Parsing UCF File [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf]
+Finished Parsing UCF File [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf]
+INFO: [Designutils 20-20] Invalid constraints found, use command 'write_ucf -constraints invalid <file>' to save all the invalid constraints to a file
+[Sun Aug  5 12:02:59 2012] Launched impl_1...
+Run output will be captured here: /home/j/btcpar/sinfast/sinfast.runs/impl_1_4/runme.log
+launch_runs: Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 3286.887 ; gain = 0.000
+refresh_design
+Parsing EDIF File [./sinfast.runs/impl_1_4/sha_top.edf]
+Finished Parsing EDIF File [./sinfast.runs/impl_1_4/sha_top.edf]
+INFO: [Netlist 29-17] Analyzing 40 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Parsing UCF File [/home/j/btcpar/sinfast/sinfast.runs/impl_1_4/.constrs/sha_top.ucf]
+Finished Parsing UCF File [/home/j/btcpar/sinfast/sinfast.runs/impl_1_4/.constrs/sha_top.ucf]
+INFO: [Designutils 20-20] Invalid constraints found, use command 'write_ucf -constraints invalid <file>' to save all the invalid constraints to a file
+INFO: [Designutils 20-669] Parsing Placement File : /home/j/btcpar/sinfast/sinfast.runs/impl_1_4/sha_top_routed.xdl
+INFO: [Designutils 20-658] Finished Parsing Placement File : /home/j/btcpar/sinfast/sinfast.runs/impl_1_4/sha_top_routed.xdl
+INFO: [Designutils 20-671] Placed 53755 instances
+refresh_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:33 . Memory (MB): peak = 3286.887 ; gain = 0.000
+set_property steps.map.args.cm speed [get_runs impl_1]
+set_property steps.map.args.r 4 [get_runs impl_1]
+set_property steps.map.args.register_duplication true [get_runs impl_1]
+reset_run impl_1
+launch_runs impl_1
+Parsing EDIF File [./sinfast.data/cache/sha_top_ngc_39638af5.edif]
+Finished Parsing EDIF File [./sinfast.data/cache/sha_top_ngc_39638af5.edif]
+INFO: [Netlist 29-17] Analyzing 40 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Parsing UCF File [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf]
+Finished Parsing UCF File [/home/j/btcpar/sinfast/sinfast.srcs/constrs_1/new/sha_top.ucf]
+INFO: [Designutils 20-20] Invalid constraints found, use command 'write_ucf -constraints invalid <file>' to save all the invalid constraints to a file
+INFO: [Runs 36-46] Option 'map -cm' filtered for run 'impl_1': not available for spartan6lx parts
+INFO: [Runs 36-46] Option 'map -cm' filtered for run 'impl_1': not available for spartan6lx parts
+[Sun Aug  5 12:53:59 2012] Launched impl_1...
+Run output will be captured here: /home/j/btcpar/sinfast/sinfast.runs/impl_1_4/runme.log
+launch_runs: Time (s): cpu = 00:00:15 ; elapsed = 00:00:14 . Memory (MB): peak = 3286.887 ; gain = 0.000
+refresh_design
+Parsing EDIF File [./sinfast.runs/impl_1_4/sha_top.edf]
+Finished Parsing EDIF File [./sinfast.runs/impl_1_4/sha_top.edf]
+INFO: [Netlist 29-17] Analyzing 40 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Parsing UCF File [/home/j/btcpar/sinfast/sinfast.runs/impl_1_4/.constrs/sha_top.ucf]
+Finished Parsing UCF File [/home/j/btcpar/sinfast/sinfast.runs/impl_1_4/.constrs/sha_top.ucf]
+INFO: [Designutils 20-20] Invalid constraints found, use command 'write_ucf -constraints invalid <file>' to save all the invalid constraints to a file
+INFO: [Designutils 20-669] Parsing Placement File : /home/j/btcpar/sinfast/sinfast.runs/impl_1_4/sha_top_routed.xdl
+INFO: [Designutils 20-658] Finished Parsing Placement File : /home/j/btcpar/sinfast/sinfast.runs/impl_1_4/sha_top_routed.xdl
+INFO: [Designutils 20-671] Placed 53755 instances
+refresh_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:33 . Memory (MB): peak = 3286.887 ; gain = 0.000
+close_project
+close_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 3286.887 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting PlanAhead...
+INFO: [Common 17-83] Releasing license: PlanAhead
